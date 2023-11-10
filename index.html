@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guessing Number</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>Guess a number from 1 to 100</header>
+      <p class="guess-emoji" id="guessEmoji"></p>
+      <p class="guess" id="guess"></p>
+      <div class="input-field">
+        <input class="input" id="input" type="number" />
+        <button class="btn" id="checkButton">Check</button>
+      </div>
+      <p>You have <span class="chances" id="chances">10</span> chances</p>
+    </div>
+
+    <div id="modalOuter" class="modal-outer">
+      <div id="modalInner" class="modal-inner">
+        <p class="emoji" id="emoji"></p>
+        <p class="congrats" id="congrats"></p>
+        <button class="btn" id="replayButton">Replay</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
